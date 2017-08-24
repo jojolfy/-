@@ -1,0 +1,695 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-10 14:55:54
+ * @version $Id$
+ */
+body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, section, p, input, td, th, ins {
+    padding: 0;
+    margin: 0;
+}
+li{ list-style:none; }
+a{ text-decoration:none; color: #333; cursor: pointer; }
+img{ vertical-align:top; }
+input{ outline:none; }
+textarea{ resize:none; }
+.fl{ float: left; }
+.fr{ float: right; }
+.clearFix:after{ content: '';clear: both;display: block; }
+
+body,input{
+	font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5F5F5;
+}
+/*顶条*/
+.topbar{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: url(../images/topbar.png) repeat-x 0 -79px;
+	margin-top: -1px;
+}
+.topbar .wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+.topbar .logo{ width: 176px; }
+.topbar .logo a{
+	background: url(../images/topbar.png) no-repeat 0 15px;
+	float: left;
+	width: 157px;
+	height: 33px;
+	padding: 22px 20px 0 0 ;
+	text-indent: -9999px;
+}
+
+.bg1{
+	background: url(../images/topbar.png) no-repeat 0 9999px;
+}
+.fh{
+	float: left;
+	height: 70px;
+}
+.topbar .nav li{
+	font-size: 14px;
+	background-position: right -300px;
+}
+.bgnone{
+	background: none;
+}
+.topbar .nav span{
+	background-position: left -300px;
+}
+.topbar .nav a{
+	line-height: 76px;
+    padding-left: 2px;
+    text-align: center;
+}
+.topbar .nav i{
+	font-style: normal;
+	color: #ccc;
+    text-shadow: 0 1px 0 #1b1b1b;
+    padding: 0 20px 0 18px;
+    cursor: pointer;
+}
+/*鼠标移入事件*/
+.topbar .nav a:hover{
+	margin: 0 -1px;
+	background-position: left -469px;
+}
+.topbar .nav a:hover i{
+	padding: 0 21px 0 19px;
+	background-position: right -469px;
+}
+
+.topbar .nav li:last-child{
+	position: relative;
+}
+.topbar .nav li:last-child i{
+	padding-right: 45px;
+}
+.topbar .nav .hot{
+	position: absolute;
+	width: 28px;
+	height: 19px;
+	top: 23px;
+	left: 90px;
+	background-position: -190px 0;
+}
+/*登陆*/
+.topbar .login{
+	position: relative;
+	height: 45px;
+	margin: 21px 0 0 19px;
+	padding-right: 22px;
+	background-position: right -366px;
+}
+.topbar .login .tex{
+	display: block;
+	width: 28px;
+	margin-top: 10px;
+	color: #787878;
+}
+.topbar .login:hover{
+	background-position: right -405px;
+}
+.topbar .login:hover a{
+	color: #999;
+}
+.topbar .login:hover .inlist{
+	display: block;
+}
+/*注册列表*/
+.bg2{
+	background: url(../images/toplist.png) no-repeat 0 9999px;
+}
+.topbar .login .inlist{
+	position: absolute;
+	width: 158px;
+	top: 38px;
+	right: -43px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	display: none;
+}
+.login .inlist .inner{
+	border-radius: 3px;
+	border: 1px solid #404040;
+	background: #2a2a2a;
+}
+.login .inlist .inner ul{
+	padding-left: 10px;
+}
+.login .inlist .inner li{
+	line-height: 38px;
+}
+.login .inlist .inner a{
+	color: #ccc;
+}
+.login .inlist .inner b{
+	float: left;
+	width: 18px;
+	height: 18px;
+	margin: 10px 10px 0 0;
+}
+.login .inlist .inner .phone{
+	background-position: 0 0;
+}
+.login .inlist .inner .weixin{
+	background-position: -20px -20px;
+}
+.login .inlist .inner .qq{
+	background-position: -20px -40px;
+}
+.login .inlist .inner .weibo{
+	background-position: 0 -20px;
+}
+.login .inlist .inner .email{
+	background-position: 0 -40px;
+}
+
+.login .inlist .trim{
+	position: absolute;
+	width: 16px;
+	height: 9px;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+	background-position: -20px 0;
+}
+/*顶条搜索框*/
+.topbar .search{
+	width: 210px;
+	height: 31px;
+	margin-top: 21px;
+	background-position: 0 -550px;
+}
+.topbar .search .sec-box{
+	margin: 8px 0 0 33px;
+}
+.search .sec-box input{
+	width: 90%;
+	background: transparent;
+	border: 0;
+}
+.top-line{
+	height: 5px;
+	background-position: 0 -230px;
+	background-repeat: repeat-x;
+}
+.top-show{
+	height: 2px;
+	background: url(../images/navshadow.png) repeat-x 0 0;
+}
+/*-------------------------------------------------------------------*/
+/*内容*/
+.m-body{
+	width: 980px;
+	min-height: 700px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #d3d3d3;
+	border-width: 0 1px;
+}
+.m-body .by-wrap{
+	padding: 40px;
+}
+.bg3{
+	background: url(../images/sprite.png) no-repeat 0 9999px;
+}
+.m-body .by-wrap .by-search{
+	width: 420px;
+	height: 40px;
+	margin: 0 auto;
+	background-position: 0 0;
+}
+/*搜索框*/
+.m-body .by-wrap .by-search input{
+	width: 320px;
+	height: 17px;
+	margin: 12px 0 0 20px;
+	background: #fff;
+	border: none;
+}
+.m-body .by-wrap .by-search a{
+	width: 50px;
+	height: 40px;
+	text-indent: -999px;
+}
+.m-body .by-wrap .by-search a:hover{
+	background-position: -430px 0;
+}
+.m-body .music-list .ser-note{
+	margin: 28px 0 17px;
+	color: #999;
+}
+/*歌曲列表信息选项卡*/
+.bg4{
+	background: url(../images/tab.png) no-repeat 0 -999px;
+}
+.m-body .mu-tabs{
+	height: 39px;
+	border: 1px solid #ccc;
+	border-width: 0 1px;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	font-size: 14px;
+}
+.flh{
+	float: left;
+	height: 39px;
+}
+.m-body .mu-tabs li{
+	position: relative;
+	left: -1px;
+}
+.m-body .mu-tabs a{
+	padding-left: 2px;
+}
+.m-body .mu-tabs span{
+	padding: 2px 2px 0 0;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	width: 108px;
+}
+.m-body .mu-tabs .on a{
+	background-position: left -90px;
+}
+.m-body .mu-tabs .on span{
+	background-position: right -90px;
+}
+/*歌曲列表*/
+.music{
+	padding-top: 20px;
+}
+.music li{
+	overflow: hidden;
+	padding: 10px 10px 8px 18px;
+	border: 1px solid #fff;
+}
+.music li div{
+	float: left;
+}
+.music li div a{
+	float: left;
+	cursor: pointer;
+	background: url(../images/table.png) no-repeat 0 -9999px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.music li div a:hover{
+	text-decoration: underline;
+}
+/*.bgte{
+	background: url(../images/table.png) no-repeat 0 -9999px;
+}*/
+.music li div .mu-play{
+	width: 17px;
+	height: 17px;
+	margin-right: 5px;
+	background-position: 0 -103px; 
+}
+.music li div .mu-play:hover{
+	background-position: 0 -128px;
+}
+.music li .mu-name{
+	width: 370px;
+	margin-right: 5px;
+}
+.music li div .song-name{
+	color: #0c73c2;
+	margin: 1px 3px 0 0;
+}
+.music li div .song-mv{
+	width: 23px;
+	height: 20px;
+	background-position: 0 -151px;
+}
+.music li div .song-mv:hover{
+	background-position: -30px -151px;
+}
+.music li .mu-ctrl{
+	visibility: hidden;
+}
+.music li .mu-ctrl .song-add{
+	width: 13px;
+	height: 13px;
+	margin: 0 8px 3px 0;
+	background: url(../images/icon.png) 0 -700px;
+}
+.music li .mu-ctrl .song-add:hover{
+	background-position: -22px -700px;
+}
+.music li .mu-ctrl .tw{
+	width: 18px;
+	height: 16px;
+	margin-right: 7px;
+}
+.music li .mu-ctrl .song-fav{
+	background-position: 0 -174px;
+}
+.music li .mu-ctrl .song-fav:hover{
+	background-position: -20px -174px;
+}
+.music li .mu-ctrl .song-share{
+	background-position: 0 -195px;
+}
+.music li .mu-ctrl .song-share:hover{
+	background-position: -20px -195px;
+}
+.music li .mu-ctrl .song-dl{
+	background-position: -81px -174px;
+}
+.music li .mu-ctrl .song-dl:hover{
+	background-position: -104px -174px;
+}
+
+.music li .mu-singer{
+	width: 15%;
+	margin-right: 12px;
+}
+.music li .mu-singer a,
+.music li .mu-album a{
+	width: 100%;
+}
+.music li .mu-album{
+	width: 18%;
+	margin-right: 12px;
+}
+/*li移入移出事件*/
+.music li:nth-child(even){
+	border-color: #f7f7f7;
+	background: #f7f7f7;
+}
+.music li:hover{
+	border-color: #e1e1e1;
+	background: #f2f2f2;
+}
+.music li:hover .mu-ctrl{
+	visibility: visible;
+}
+/*---------------------------------------------*/
+/*底部播放条*/
+.btmbar{
+	position: fixed;
+	width: 100%;
+	height: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.bg5{
+	background: url(../images/playbar.png) no-repeat 0 -9999px;
+}
+.btmbar .playbar{
+	position: absolute;
+	width: 100%;
+	height: 53px;
+	left: 0;
+	top: -53px;
+	transition: .3s all linear;
+}
+.btmbar .playbar .bgbar{
+	height: 53px;
+	margin-right: 67px;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+}
+.btmbar .playbar .swihbar{
+	position: absolute;
+	width: 52px;
+	height: 67px;
+	top: -14px;
+	right: 15px;
+	background-position: 0 -380px;
+	z-index: 11;
+}
+.playbar .swihbar .lock{
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 6px 0 0 17px;
+	background-position: -100px -380px;
+}
+.btmbar .playbar .openbar{
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	top: -10px;
+	cursor: pointer;
+	z-index: 10;
+}
+.btmbar .playbar .rig-bg{
+	position: absolute;
+	width: 15px;
+	height: 54px;
+	right: 0;
+	top: -1px;
+	background-position: -52px -393px;
+}
+.btmbar .playbar .audio{
+	position: absolute;
+	width: 980px;
+	height: 47px;
+	top: 6px;
+	left: 50%;
+	margin-left: -490px;
+}
+.btmbar .playbar .p-btns{
+	width: 137px;
+	padding-top: 6px;
+}
+.playbar .p-btns a{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 5px 8px 0 0;
+	background: url(../images/playbar.png) no-repeat 0 -9999px;
+}
+.playbar .p-btns .btn-prev{
+	background-position: 0 -130px;
+}
+.playbar .p-btns .btn-play{
+	width: 36px;
+	height: 36px;
+	margin-top: 0;
+	background-position: 0 -204px;
+}
+.playbar .p-btns .btn-next{
+	background-position: -80px -130px;
+}
+.playbar .p-btns .btn-prev:hover{
+	background-position: -30px -130px;
+}
+.playbar .p-btns .btn-play:hover{
+	background-position: -40px -204px;
+}
+.playbar .p-btns .btn-next:hover{
+	background-position: -110px -130px;
+}
+/*暂停按钮*/
+.playbar .p-btns .btn-pause{
+	width: 36px;
+	height: 36px;
+	margin-top: 0;
+	background-position: 0 -165px;
+}
+.playbar .p-btns .btn-pause:hover{
+	background-position: -40px -165px;
+}
+.btmbar .playbar .p-pic{
+	width: 34px;
+	height: 34px;
+	margin: 6px 15px 0 0;
+}
+.btmbar .playbar .p-mesg{
+	width: 608px;
+}
+.playbar .p-mesg .mu-text{
+	height: 28px;
+	line-height: 28px;
+}
+.p-mesg .mu-text a{
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	color: #e8e8e8;
+}
+.p-mesg .mu-text .mv{
+	width: 19px;
+	height: 17px;
+	margin: 6px 15px 0 3px;
+	background-position: 0 -57px;
+}
+.p-mesg .mu-text .link{
+	width: 14px;
+	height: 15px;
+	margin: 7px 0 0 13px;
+	background-position: -110px -103px;
+}
+
+.bg6{
+	background: url(../images/statbar.png) no-repeat 0 -9999px;
+}
+.p-mesg .meter .me-bg{
+	/*position: relative;*/
+	width: 493px;
+	height: 9px;
+	background-position: right 0;
+}
+.bg7{
+	background: url(../images/iconall.png) no-repeat 0 -9999px;
+}
+.p-mesg .meter .cur{
+	position: relative;
+	width: 0%;
+	height: 9px;
+	background-position: left -66px;
+}
+.p-mesg .meter .cur-btn{
+	position: absolute;
+	width: 22px;
+	height: 24px;
+	top: -7px;
+	right: 0;
+	margin-right: -11px;
+	background-position: 0 -250px;
+}
+
+.p-mesg .meter .me-time{
+	color: #797979;
+	margin: -3px 0 0 15px;
+}
+.p-mesg .meter .me-time i{
+	font-style: normal;
+	color: #a1a1a1;
+}
+.p-mesg .meter .me-time b{
+	font-weight: normal;
+}
+
+.playbar .audio .oper{
+	width: 60px;
+}
+.playbar .audio .oper a{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 11px 2px 0 0;
+}
+.playbar .audio .oper .coll{
+	background-position: -88px -163px;
+}
+.playbar .audio .oper .coll:hover{
+	background-position: -88px -189px;
+}
+.playbar .audio .oper .share{
+	background-position: -114px -163px;
+}
+.playbar .audio .oper .share:hover{
+	background-position: -114px -189px;
+}
+
+.playbar .audio .ctrl{
+	position: relative;
+	width: 113px;
+	padding-left: 13px;
+	background-position: -147px -238px;
+}
+.audio .ctrl a{
+	
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 11px 2px 0 0;
+}
+.audio .ctrl .volume{
+	background-position: -2px -248px;
+}
+.audio .ctrl .volume:hover{
+	background-position: -31px -248px;
+}
+.audio .ctrl .loop{
+	background-position: -3px -344px;
+}
+.audio .ctrl .loop:hover{
+	background-position: -33px -344px;
+}
+.audio .ctrl .rand{
+	background-position: -66px -248px;
+}
+.audio .ctrl .rand:hover{
+	background-position: -93px -248px;
+}
+.audio .ctrl .single{
+	background-position: -66px -344px;
+}
+.audio .ctrl .single:hover{
+	background-position: -93px -344px;
+}
+
+.audio .ctrl .song-list{
+	width: 39px;
+	height: 30px;
+	background-position: -42px -68px;
+	margin-right: 0;
+	line-height: 26px;
+	color: #666;
+	text-align: center;
+	padding-left: 20px;
+}
+.audio .ctrl .vol-bar{
+	position: absolute;
+	width: 32px;
+	height: 113px;
+	left: 9px;
+	top: -113px;
+	background-position: 0 -503px;
+	visibility: hidden;
+}
+.ctrl .vol-bar .vol-bg{
+	position: absolute;
+	width: 4px;
+	height: 92px;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -2px;
+}
+.ctrl .vol-bar .vol-cur{
+	position: absolute;
+	width: 4px;
+	height: 50%;
+	bottom: 0;
+	left: 0;
+	background-position: -40px bottom;
+}
+.ctrl .vol-bar .vol-btn{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: -7px;
+	top: 0;
+	margin-top: -9px;
+	background-position: -40px -250px;
+	cursor: pointer;
+}
+
+.audio .ctrl .loop-tip{
+	position: absolute;
+	width: 81px;
+	height: 39px;
+	left: 12px;
+	top: -35px;
+	line-height: 34px;
+	text-align: center;
+	background-position: 0 -457px;
+	color: #fff;
+	display: none;
+}

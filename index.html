@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>网易云音乐</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link href="css/index.css" rel="stylesheet">
+	<script type="text/javascript" src="js/audio.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="topbar">
+		<div class="wrap clearFix">
+			<h1 class="logo fl">
+				<a href="#">网易云音乐</a>
+			</h1>
+			<ul id="nav" class="nav fl">
+				<li class="bg1 fh">
+					<span class="bg1 fh bgnone">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">发现音乐</i>
+						</a>
+					</span>
+				</li>
+				<li class="bg1 fh">
+					<span class="bg1 fh">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">我的音乐</i>
+						</a>
+					</span>
+				</li>
+				<li class="bg1 fh">
+					<span class="bg1 fh">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">朋友</i>
+						</a>
+					</span>
+				</li>
+				<li class="bg1 fh">
+					<span class="bg1 fh">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">商城</i>
+						</a>
+					</span>
+				</li>
+				<li class="bg1 fh">
+					<span class="bg1 fh">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">音乐人</i>
+						</a>
+					</span>
+				</li>
+				<li class="bg1 fh bgnone">
+					<span class="bg1 fh">
+						<a class="bg1 fh" href="#">
+							<i class="bg1 fh">下载客户端</i>
+						</a>
+					</span>
+					<sup class="hot bg1"></sup>
+				</li>
+			</ul>
+			<div class="bg1 fr login">
+				<a class="tex" href="#">登录</a>
+				<div class="inlist">
+					<div class="inner">
+						<ul>
+							<li>
+								<a href="#">
+									<b class="bg2 phone"></b>
+									<span>手机号登陆</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<b class="bg2 weixin"></b>
+									<span>微信登陆</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<b class="bg2 qq"></b>
+									<span>QQ登陆</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<b class="bg2 weibo"></b>
+									<span>新浪微博登陆</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<b class="bg2 email"></b>
+									<span>网易邮箱账号登陆</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<i class="trim bg2"></i>
+				</div>
+			</div>
+			<div class="search fr bg1">
+				<div class="sec-box">
+					<input type="text" name="" placeholder="单曲/歌手/专辑/歌单/MV/用户" />
+				</div>
+			</div>
+		</div>
+		<div class="top-line bg1"></div>
+		<div class="top-show"></div>
+    </div>
+    <div class="m-body">
+    	<div class="by-wrap">
+    		<div class="by-search bg3 clearFix">
+    			<input class="fl" type="text" name="">
+    			<a class="fr bg3" href="javascript:;">搜索</a>
+    		</div>
+    		<div class="music-list">
+    			<div class="ser-note">搜索某某某</div>
+    		</div>
+    		<ul class="mu-tabs bg4 clearFix">
+    			<li class="flh on">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">单曲</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">歌手</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">专辑</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">MV</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">歌词</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">歌单</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">主播电台</span>
+    				</a>
+    			</li>
+    			<li class="flh">
+    				<a class="bg4 flh" href="javascript:;">
+    					<span class="bg4 flh">用户</span>
+    				</a>
+    			</li>
+    		</ul>
+            <div id="music" class="music">
+                <ul>
+                    <!-- <li>
+                        <div>
+                            <a class="mu-play" href="javascript:;"></a>
+                        </div>
+                        <div class="mu-name">
+                            <a class="song-name" href="#">凉凉</a>
+                            <a class="song-mv" href="#"></a>
+                        </div>
+                        <div class="mu-ctrl">
+                            <a class="song-add" href="javascript:;"></a>
+                            <a class="song-fav tw" href="javascript:;"></a>
+                            <a class="song-share tw" href="javascript:;"></a>
+                            <a class="song-dl tw" href="javascript:;"></a>
+                        </div>
+                        <div class="mu-singer">
+                            <a href="#">张碧晨/杨宗纬</a>
+                        </div>
+                        <div class="mu-album">
+                            <a href="#">电视剧《三生三世十里桃花》片尾曲</a>
+                        </div>
+                        <div class="mu-time">04:34</div>
+                    </li> -->
+                </ul>
+            </div>
+    	</div>
+    </div>
+    <div class="btmbar">
+    	<div class="playbar">
+    		<div class="bgbar bg5"></div>
+    		<div class="openbar"></div>
+    		<div class="swihbar bg5">
+    			<a class="lock bg5" href="javascript:;"></a>
+    		</div>
+    		<div class="rig-bg bg5"></div>
+    		<div class="audio clearFix">
+    			<div class="p-btns fl">
+    				<a id="prev" class="btn-prev" href="javascript:;" title="上一首"></a>
+    				<a id="play" class="btn-play" href="javascript:;" title="播放/暂停"></a>
+    				<a id="next" class="btn-next" href="javascript:;" title="下一首"></a>
+    			</div>
+    			<div class="p-pic fl">
+    				<a href="#">
+    					<img src="images/music.jpg">
+    				</a>
+    			</div>
+    			<div class="p-mesg fl">
+    				<div class="mu-text">
+    					<a class="song" href="#">动物世界</a>
+    					<a class="mv bg5" href="#"></a>
+    					<a class="singer" href="#">薛之谦</a>
+    					<a class="link bg5" href="#"></a>
+    				</div>
+    				<div class="meter clearFix">
+    					<div class="me-bg fl bg6">
+    						<div class="cur bg6">
+    							<a href="javascript:;" class="cur-btn bg7"></a>
+    						</div>
+    					</div>
+    					<span class="me-time fl">
+    						<i>00:00</i>
+    						/ <b>00:00</b>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="oper fl">
+    				<a href="javascript:;" class="coll bg5" title="收藏"></a>
+    				<a href="javascript:;" class="share bg5" title="分享"></a>
+    			</div>
+    			<div class="ctrl fl bg5">
+    				<a href="javascript:;" class="bg5 volume"></a>
+    				<div class="vol-bar bg5">
+    					<div class="vol-bg">
+	    					<div class="vol-cur bg5">
+	    						<span class="vol-btn bg7"></span>
+	    					</div>
+    					</div>
+    				</div>
+    				<a href="javascript:;" class="bg5 tab-play loop"></a>
+    				<div class="loop-tip bg5">循环</div>
+    				<a href="javascript:;" class="bg5 song-list">
+    					<span class="sg-num">26</span>
+    				</a>
+    				<!-- <div class="sg-li"></div> -->
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
